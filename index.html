@@ -15,9 +15,13 @@
             <h1>Here be a bunch of buttons with different effects when clicked! Why did I do this? Because I can.</h1>
         </header>
         <section>
-            <div><button id="smol">smol</button></div>
-            <div><button id="big">BIG</button></div>
-            <div> 
+            <div>
+                <button id="smol">smol</button>
+            </div>
+            <div>
+                <button id="big">BIG</button>
+            </div>
+            <div>
                 <svg id="triange" width="300" height="200">
                     <g>Triangle
                         <polygon points="150,10 50,190 250,190" fill="#B14DDA " /><text x="150" y="130"
@@ -25,23 +29,29 @@
                     </g>
                 </svg>
             </div>
-            <div><button id="clicker">button</button></div>
+            <div>
+                <span>
+                    <h1 id="clickerDisplay">0</h1>
+                    <button id="decrement">-</button><button id="increment">+</button>
+                </span>
+            </div>
             <div>
                 <svg id="star" height="200" width="200">
                     <g>Star
                         <polygon points="100,10 40,198 190,78 10,78 160,198" fill="#F5EE03" /><text x="100" y="120"
-                            text-anchor="middle" font-size="25" 
-                            fill="blue">Star</text>
+                            text-anchor="middle" font-size="25" fill="blue">Star</text>
                     </g>
                 </svg>
             </div>
             <div>
                 <audio id="catMeow" src="./assets/sounds/catMeow.mp3" preload="auto">
-                  </audio>
-                <button onclick="document.getElementById('catMeow').play();" id="cat">cat</button></div>
-           
+                </audio>
+                <button onclick="document.getElementById('catMeow').play();" id="cat">cat</button>
+            </div>
+
         </section>
     </main>
 </body>
 <script src="button.js"></script>
+
 </html>
